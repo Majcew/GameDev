@@ -7,6 +7,7 @@ public class TPlayerController : MonoBehaviour
 {
     public GameObject collectible;
     public GameObject enemy;
+    public GameObject fireworks;
     public Text countText;
     public Text livesText;
     public Text finalText;
@@ -55,6 +56,11 @@ public class TPlayerController : MonoBehaviour
     void setCountText()
     {
         countText.text = "Count: " + count.ToString();
+    }
+    void Explode(Vector3 position)
+    {
+        GameObject firework = Instantiate(fireworks, position, Quaternion.identity);
+        fireworks.GetComponent<ParticleSystem>().Play();
     }
 
     void setLivesText()

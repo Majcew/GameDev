@@ -599,6 +599,12 @@ PrefabInstance:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 69994988}
+    - target: {fileID: 9096256579429457289, guid: 7cadffe976f91a04595b69fa5254567d,
+        type: 3}
+      propertyPath: fireworks
+      value: 
+      objectReference: {fileID: 3044249530260059274, guid: bf29d6f36e1cad348a53bdc639e8aed8,
+        type: 3}
     - target: {fileID: 4475037872072946594, guid: 7cadffe976f91a04595b69fa5254567d,
         type: 3}
       propertyPath: m_LocalPosition.z
